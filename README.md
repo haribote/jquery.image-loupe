@@ -6,20 +6,41 @@ A touchable image magnifyer plug-in for smart devices.
 ## Load scripts to the page
 ```html
 <script src="jquery-1.11.3.min.js"></script>
-<script src="jquery.lateriser.js"></script>
+<script src="jquery.loupe.js"></script>
 ```
 
-## Set attribute for image element
+## Markup image
 ```html
-<img src="placeholder.png" data-src="original-image.jpg" width="640" height="480" class="late-riser">
+<div class="container">
+  <p>
+    <img src="image.jpg" alt="" width="720" height="1280" class="js-loupe">
+  </p>
+</div>
 ```
-You can use your original "placeholder" image.
+
+## Styles
+```css
+.container p {
+  overflow: hidden;
+  text-align: center;
+}
+.container img {
+  opacity: 0;
+  transition: opacity .4s ease;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+}
+.container img.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+```
 
 ## Define the plug-in
 ``` javascript
 <script>
   $(function () {
-    $('.late-riser').lateRiser();
+    $('.late-loupe').loupe();
   });
 </script>
 ```
