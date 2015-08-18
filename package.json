@@ -1,0 +1,26 @@
+{
+  "name": "jquery.loupe",
+  "version": "0.1.0",
+  "description": "A touchable image magnifyer plug-in for smart devices.",
+  "main": "jquery.loupe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haribote/jquery.image-loupe.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "image",
+    "loupe",
+    "lupe",
+    "magnifyer"
+  ],
+  "author": "KIMURA Tetsuro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haribote/jquery.image-loupe/issues"
+  },
+  "homepage": "https://github.com/haribote/jquery.image-loupe#readme"
+}
