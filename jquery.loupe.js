@@ -7,6 +7,8 @@
  */
 
 ;(function (window, $, undefined) {
+  'use strict';
+
   /**
    * loupe plug-in
    */
